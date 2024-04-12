@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Harsh Portfolio</title>
+    <!--from font awesome site-->
+    <script src="https://kit.fontawesome.com/f0c72fc8df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/harsh.jpg" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hello, I'm <span>Harsh</span>, <br/> and this is my portfolio!</h1>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/me.jpg"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Harsh Mamgai, a passionate frontend developer currently pursuing Btech in Information Technology from Bharati Vidyapeeth's College of Engineering-New Delhi. I love crafting beautiful and responsive user interfaces. Explore my portfolio to see how I turn ideas into visually stunning web experience.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onClick="opentab('education')">Education</p>
+                        <p class="tab-links" onClick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS</span><br/>Designing Responsive Website interfaces</li>
+                            <li><span>Java script</span><br/>Working of the website</li>
+                            <li><span>React.js</span><br/>Designing and rendering UI components and logic behind their working</li>
+                            <li><span>Redux.js</span><br/>For centeral state management</li>
+                            <li><span>Node.js</span><br/>For Backend</li>
+                            <li><span>DSA</span><br/>Problem Solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br/> St Crispin Sr Sec School</li>
+                            <li><span>Present</span><br/> Bharati Vidyapeeth's College
+                                of Engineering (IPU), New Delhi</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Cricket</span><br/>have a passion for playing cricket.</li>
+                            <li><span>Listening music</span><br/>Likes listening music</li>
+                            <li><span>Exercise</span><br/>Likes to exercise</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/music.png"/>
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This app is built for listening songs. you can listen to the songs of various singers here</p>
+                        <a href="https://harsh-mamgai.github.io/Music-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/notes.jpg"/>
+                    <div class="layer">
+                        <h3>Notes App</h3>
+                        <p>In this app we can make notes add notes and delete notes. it is a note taking website</p>
+                        <a href="https://harsh-mamgai.github.io/Notes-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/news.jpg"/>
+                    <div class="layer">
+                        <h3>News Website</h3>
+                        <p>A news website where we can see news on varoius topics or agendas</p>
+                        <a href="https://harsh-mamgai.github.io/News-Website/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Harsh-Mamgai" class="btn">See More</a>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>harshmamgai1@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8178005070</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/harsh-mamgai-55050a243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Harsh-Mamgai"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/harshmamgai1/"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                    <a href="./assets/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--from google sheets-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw35jb8vkMiQMxotkJfgCjnjnalJz26qOlVR3yhMk4Xr6x9X2RqXdj2XuqGnN1TzpgWeA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = '';
+                }, 5000);
+                form.reset();//resets the input fields of the form to default value
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
